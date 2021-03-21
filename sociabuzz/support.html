@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- VENDORS STYLES -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendors/css/normalize.css" />
+
+    <!-- RESOURCES STYLES -->
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="stylesheet" href="resources/css/responsive.css" />
+    <title></title>
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header>
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light shadow">
+            <a class="navbar-brand" href="#"><img src="./resources/img/social-buzz-logo.png" class="img-fluid w-75"
+                    alt="Sociabuzz Tribe Logo" /></a>
+        </nav>
+        <!-- navbar end -->
+    </header>
+    <!-- Header Section End -->
+
+    <!-- main section start -->
+    <main>
+
+        <!-- supporter description start -->
+        <section class="supporter-section container-fluid custom-container mb-5 mx-auto w-50">
+            <div class="custom-container talent-profile-details text-center my-5">
+                <img class="rounded-circle supporter-img" src="./resources/img/talent-img.png" alt="talent picture" />
+
+                <h4 class="talent-name font-weight-bolder my-4">
+                    Talent Name Lorem Ipsum
+                </h4>
+
+                <p class="talent-description text-center mx-auto mb-5">
+                    Donate page description goes here lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco.
+                </p>
+            </div>
+
+            <!-- supporter form start -->
+            <form method="POST" action="/" id="supporter-form" class="supporter-form border mb-4 mx-auto p-4 rounded">
+                <p class="font-weight-bold mb-3">
+                    Traktir
+                </p>
+
+                <div class="d-flex justify-content-start align-items-center mb-3">
+                    <img src="./resources/img/demo.jpg" alt="coffee image" class="product-img rounded-circle mr-3">
+
+                    <div class="product-value mr-5">
+                        <p class="font-weight-bold mb-1">
+                            Kopi
+                        </p>
+                        <p class="text-secondary mb-0" id="product-price" data-value="10.0">Rp10.000 / unit</p>
+                    </div>
+
+                    <div class="input-group counter w-25">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn border font-weight-bolder text-center p-0 h-100"
+                                id="minus">
+                                -
+                            </button>
+                        </span>
+                        <input type="text" name="quantity" id="quantity" class="form-control  text-center" value="1"
+                            min="1" max="10">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn border text-center font-weight-bolder p-0 h-100" id="plus">
+                                +
+                            </button>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- total price -->
+                <p class="mb-5"> Total Rp <span id="total-price" data-value="10.00">10</span>.000</p>
+
+                <!-- nominal -->
+                <div class="input-group mb-5 nominal">
+                    <label class="font-weight-bold mb-1 w-100">
+                        Nominal
+                    </label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="rp-addon">Rp</span>
+                    </div>
+                    <input type="text" class="form-control" name="nominal" aria-label="nominal"
+                        aria-describedby="rp-addon">
+                </div>
+
+                <!-- vote section -->
+                <p class="font-weight-bold  mb-1">
+                    Vote
+                </p>
+
+                <h6>
+                    <small class="text-muted">Tidak wajib diisi. Hanya isi jika ingin vote.</small>
+                </h6>
+
+                <div class="p-4 bg-light border rounded mb-4">
+                    <label class="font-weight-bold  mb-3">
+                        Pilih yang mana lorem ipsum dolor sit amet conpectus lorem adipiscing elit, sed do eiusmod
+                        tempor?
+                    </label>
+
+                    <div class="custom-control custom-radio ">
+                        <input type="radio" class="custom-control-input" name="radio-select-name" id="customRadio1">
+                        <label class="custom-control-label" for="customRadio1">Custom radio</label>
+                    </div>
+
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" name="radio-select-name" id="customRadio2"
+                            checked>
+                        <label class="custom-control-label" for="customRadio2">Another custom radio</label>
+                    </div>
+
+                    <div class="custom-control custom-radio mb-3">
+                        <input type="radio" class="custom-control-input" name="radio-select-name" id="customRadio3"
+                            checked>
+                        <label class="custom-control-label" for="customRadio3">Another custom radio</label>
+                    </div>
+
+
+                    <h6 class="mb-0">
+                        <small>1 vote = Rp1000</small>
+                    </h6>
+
+                    <h6>
+                        <small class="text-danger">Ubah nominal untuk ubah jumlah vote
+                        </small>
+                    </h6>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="message" class="font-weight-bold mb-1">Pesan</label>
+                    <input type="text" class="form-control" name="message" id="message" placeholder="">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="name" class="font-weight-bold mb-1">Nama Anda </label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="">
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input " name="anonymous" id="anonymous"
+                                value="anonymous">
+                            <span class="text-muted"> Anonim </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="email" class="font-weight-bold mb-1">Email Anda
+                    </label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="">
+
+
+                </div>
+            </form>
+            <!-- supporter form end -->
+
+
+
+        </section>
+        <!-- supporter description end -->
+
+
+
+
+    </main>
+    <!-- main section end -->
+
+
+    <!-- footer start -->
+    <footer class="bg-dark text-center p-5">
+        <p class="text-white">Powered by</p>
+        <img src="./resources/img/footer.png" class="mb-5 img-fluid" alt="footer image">
+        <p class="text-secondary">Ketentuan Penggunaan</p>
+        <p class="text-secondary">Kebijakan Privasi</p>
+        <p class="text-secondary">&copy; PT Komunika Lintas Maya</p>
+    </footer>
+    <!-- footer end -->
+
+    <!-- vendor scripts -->
+    <script src="vendors/js/html5shiv.min.js"></script>
+    <script src="vendors/js/respond.min.js"></script>
+    <script src="vendors/js/selectivizr.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Masonry Plug-ins  -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <!-- resource scripts -->
+    <script src="/resources/js/app.js"></script>
+</body>
+
+</html>

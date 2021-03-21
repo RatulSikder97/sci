@@ -1,0 +1,172 @@
+/* =================== */
+/* Basic Setup */
+/* =================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.custom-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* bootstrap override rounded */
+.rounded {
+  border-radius: 20px !important;
+}
+
+/* bootstrap color override */
+.bg-primary {
+  background: #40aaf9 !important;
+}
+
+.bg-success {
+  background: #76cb11 !important;
+}
+
+/* custom background */
+.bg-light-success {
+  background: #e2f0d9 !important;
+}
+
+/* override font color */
+
+/* truncate after 3 line  */
+.truncate-overflow {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  white-space: normal;
+  overflow: hidden;
+}
+
+/* cover image */
+.cover-img {
+  height: 29vw;
+}
+
+/* talent section */
+.talent-img {
+  width: 160px;
+}
+
+/* icons styles */
+.social-icon a:hover {
+  color: transparent;
+}
+
+.instagram-icon:hover,
+.youtube-icon:hover,
+.tiktok-icon:hover {
+  filter: drop-shadow(0 0 12px #ff0000);
+}
+
+.twitter-icon:hover,
+.wordpress-icon:hover,
+.facebook-icon:hover,
+.discord-icon:hover,
+.linkedin-icon:hover {
+  filter: drop-shadow(0 0 12px #318bff);
+}
+
+.twitch-icon:hover {
+  filter: drop-shadow(0 0 12px #6600ff);
+}
+
+.spotify-icon:hover {
+  filter: drop-shadow(0 0 12px #00ff6a);
+}
+
+.social-icon img {
+  width: 28px;
+}
+
+/* support options */
+/* support option card list */
+.support-options {
+  max-width: 1170px;
+}
+
+.grid {
+  margin: 0 auto;
+}
+
+.support-option-card-list .card {
+  width: 320px;
+}
+
+.support-option-card-list .card .card-img-top {
+  height: auto;
+  border-radius: 18px 18px 0 0;
+}
+
+.support-description,
+.benefit-list {
+  font-size: 14px;
+}
+
+.link {
+  text-decoration: underline !important;
+}
+
+.link:hover {
+  color: #40aaf9;
+}
+
+/* message form */
+textarea {
+  resize: none;
+}
+
+/* content section */
+.paid-header {
+  background: url("../img/paid-background.png") no-repeat center;
+  background-size: cover;
+  height: 230px;
+}
+
+.paid-header,
+.article-video video,
+.article-image img {
+  border-radius: 20px 20px 0 0;
+  outline: 0;
+}
+
+/* --------------------- */
+/* support page */
+/* --------------------- */
+.supporter-img {
+  width: 80px;
+}
+.product-img {
+  width: 50px;
+}
+
+.counter {
+  width: 150px;
+}
+
+.counter button {
+  width: 35px;
+  font-size: 22px;
+}
+/* footer image */
+footer {
+  font-size: 14px;
+}
