@@ -17,8 +17,7 @@
 
     <!-- RESOURCES STYLES -->
     <link rel="stylesheet" href="resources/css/style.css" />
-    <link rel="stylesheet" href="resources/css/responsive.css" />
-    <title></title>
+    <title>Sociabuzz Tribe</title>
 </head>
 
 <body>
@@ -35,9 +34,8 @@
 
     <!-- main section start -->
     <main>
-
         <!-- supporter description start -->
-        <section class="supporter-section container-fluid custom-container mb-5 mx-auto w-50">
+        <section class="supporter-section custom-container mb-5 mx-auto w-50">
             <div class="custom-container talent-profile-details text-center my-5">
                 <img class="rounded-circle supporter-img" src="./resources/img/talent-img.png" alt="talent picture" />
 
@@ -59,25 +57,26 @@
                     Traktir
                 </p>
 
-                <div class="d-flex justify-content-start align-items-center mb-3">
+                <div
+                    class="d-flex justify-content-start flex-column flex-md-row align-items-start align-items-md-center mb-3">
                     <img src="./resources/img/demo.jpg" alt="coffee image" class="product-img rounded-circle mr-3">
 
-                    <div class="product-value mr-5">
+                    <div class="product-value mr-4">
                         <p class="font-weight-bold mb-1">
                             Kopi
                         </p>
                         <p class="text-secondary mb-0" id="product-price" data-value="10.0">Rp10.000 / unit</p>
                     </div>
 
-                    <div class="input-group counter w-25">
+                    <div class="input-group counter">
                         <span class="input-group-btn">
-                            <button type="button" class="btn border font-weight-bolder text-center p-0 h-100"
+                            <button type="button" class="btn border font-weight-bolder text-center p-0 h-100 "
                                 id="minus">
                                 -
                             </button>
                         </span>
-                        <input type="text" name="quantity" id="quantity" class="form-control  text-center" value="1"
-                            min="1" max="10">
+                        <input type="text" name="quantity" id="quantity" class="form-control  text-center h-auto"
+                            value="1" min="1" max="10">
                         <span class="input-group-btn">
                             <button type="button" class="btn border text-center font-weight-bolder p-0 h-100" id="plus">
                                 +
@@ -90,10 +89,10 @@
                 <p class="mb-5"> Total Rp <span id="total-price" data-value="10.00">10</span>.000</p>
 
                 <!-- nominal -->
+                <label class="font-weight-bold mb-1 w-100">
+                    Nominal
+                </label>
                 <div class="input-group mb-5 nominal">
-                    <label class="font-weight-bold mb-1 w-100">
-                        Nominal
-                    </label>
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="rp-addon">Rp</span>
                     </div>
@@ -118,19 +117,33 @@
 
                     <div class="custom-control custom-radio ">
                         <input type="radio" class="custom-control-input" name="radio-select-name" id="customRadio1">
-                        <label class="custom-control-label" for="customRadio1">Custom radio</label>
+                        <label class="custom-control-label" for="customRadio1">
+                            <span class="font-weight-bold">
+                                Pilihan pertama
+                            </span>(saat ini 7 vote = 70%)
+                            <span class="font-weight-bold text-danger">
+                                +10 vote jadi 85%
+                            </span>
+                        </label>
                     </div>
 
                     <div class="custom-control custom-radio">
                         <input type="radio" class="custom-control-input" name="radio-select-name" id="customRadio2"
                             checked>
-                        <label class="custom-control-label" for="customRadio2">Another custom radio</label>
+                        <label class="custom-control-label" for="customRadio2">
+                            <span class="font-weight-bold">
+                                Pilihan kedua
+                            </span>(saat ini 2 vote = 20%)
+                        </label>
                     </div>
 
                     <div class="custom-control custom-radio mb-3">
-                        <input type="radio" class="custom-control-input" name="radio-select-name" id="customRadio3"
-                            checked>
-                        <label class="custom-control-label" for="customRadio3">Another custom radio</label>
+                        <input type="radio" class="custom-control-input" name="radio-select-name" id="customRadio3">
+                        <label class="custom-control-label" for="customRadio3">
+                            <span class="font-weight-bold">
+                                Pilihan ketiga
+                            </span>(saat ini 1 vote = 10%)
+                        </label>
                     </div>
 
 
@@ -144,12 +157,12 @@
                     </h6>
                 </div>
 
-                <div class="form-group mb-3">
+                <div class="form-group mb-4">
                     <label for="message" class="font-weight-bold mb-1">Pesan</label>
                     <input type="text" class="form-control" name="message" id="message" placeholder="">
                 </div>
 
-                <div class="form-group mb-3">
+                <div class="form-group mb-4">
                     <label for="name" class="font-weight-bold mb-1">Nama Anda </label>
                     <input type="text" class="form-control" name="name" id="name" placeholder="">
 
@@ -162,13 +175,93 @@
                     </div>
                 </div>
 
-                <div class="form-group mb-3">
+                <div class="form-group mb-4">
                     <label for="email" class="font-weight-bold mb-1">Email Anda
                     </label>
                     <input type="email" class="form-control" name="email" id="email" placeholder="">
-
-
                 </div>
+
+                <!-- payment method  -->
+
+                <div class="payment-option mb-4">
+                    <p class="payment-method font-weight-bold">Pilih metode pembayaran</p>
+
+                    <!-- @ewallet -->
+                    <div class="ewallet mb-4">
+                        <p class="text-secondary mb-1">eWallet</p>
+                        <label
+                            class="payment-card custom-control custom-radio custom-control-inline rounded border shadow p-2 mr-2 active">
+                            <img src="./resources/img/gopay.png" alt="gopay" class="pay-card-img mx-auto  p-1">
+                            <input type="radio" name="" id="" value="checkedValue" class="custom-control-input">
+                        </label>
+
+                        <label
+                            class="payment-card custom-control custom-radio custom-control-inline rounded border shadow p-2 mr-2">
+                            <img src="./resources/img/ovo.png" alt="ovo" class="pay-card-img mx-auto  p-1">
+                            <input type="radio" name="" id="" value="checkedValue" class="custom-control-input">
+                        </label>
+
+                        <label
+                            class="payment-card custom-control custom-radio custom-control-inline rounded border shadow p-2 mr-2">
+                            <img src="./resources/img/dana.png" alt="dana" class="pay-card-img mx-auto  p-1">
+                            <input type="radio" name="" id="" value="checkedValue" class="custom-control-input">
+                        </label>
+
+                        <label
+                            class="payment-card custom-control custom-radio custom-control-inline rounded border shadow p-2 mr-0">
+                            <img src="./resources/img/link aja.png" alt="link aja" class="pay-card-img mx-auto p-1">
+                            <input type="radio" name="" id="" value="checkedValue" class="custom-control-input">
+                        </label>
+                    </div>
+
+                    <!-- @bank-transfer -->
+                    <div class="bank mb-4">
+                        <p class="text-secondary mb-1">Bank Transfer</p>
+                        <label
+                            class="payment-card custom-control custom-radio custom-control-inline rounded border shadow p-2 mr-2 active">
+                            <img src="./resources/img/bca.png" alt="bca" class="pay-card-img mx-auto  p-1">
+                            <input type="radio" name="" id="" value="checkedValue" class="custom-control-input">
+                        </label>
+
+                        <label
+                            class="payment-card custom-control custom-radio custom-control-inline rounded border shadow p-2 mr-2">
+                            <img src="./resources/img/mandiri.png" alt="mandiri" class="pay-card-img mx-auto  p-1">
+                            <input type="radio" name="" id="" value="checkedValue" class="custom-control-input">
+                        </label>
+
+                        <label
+                            class="payment-card custom-control custom-radio custom-control-inline rounded border shadow p-2 mr-2">
+                            <img src="./resources/img/bni.png" alt="bni" class="pay-card-img mx-auto  p-1">
+                            <input type="radio" name="" id="" value="checkedValue" class="custom-control-input">
+                        </label>
+
+                        <label
+                            class="payment-card custom-control custom-radio custom-control-inline rounded border shadow p-2 mr-2">
+                            <img src="./resources/img/permata.png" alt="permata bank" class="pay-card-img mx-auto p-1">
+                            <input type="radio" name="" id="" value="checkedValue" class="custom-control-input">
+                        </label>
+
+                        <label
+                            class="payment-card custom-control custom-radio custom-control-inline rounded border shadow p-2 mr-0">
+                            <img src="./resources/img/bri.png" alt="bank bri" class="pay-card-img mx-auto p-1">
+                            <input type="radio" name="" id="" value="checkedValue" class="custom-control-input">
+                        </label>
+                    </div>
+                </div>
+
+                <p class="text-center">
+                    Rp100.000 + Rp2000 (Biaya Transaksi OVO) = <span class="font-weight-bold">Rp102.000</span>
+                </p>
+
+                <button class="btn text-white bg-success rounded p-2 btn-block font-weight-bold mb-2">
+                    Lanjut ke pembayaran
+                </button>
+
+                <p class="h6 small text-muted text-center">
+                    Dengan melakukan transaksi, Anda setuju dengan Ketentuan Penggunaan yang berlaku
+                </p>
+
+
             </form>
             <!-- supporter form end -->
 

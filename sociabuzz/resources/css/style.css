@@ -21,14 +21,9 @@ a {
   text-decoration: none;
 }
 
-.custom-container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
 /* bootstrap override rounded */
 .rounded {
-  border-radius: 20px !important;
+  border-radius: 18px !important;
 }
 
 /* bootstrap color override */
@@ -40,12 +35,36 @@ a {
   background: #76cb11 !important;
 }
 
+/* bootstrap pagination active color */
+.page-item.active .page-link {
+  background: #76cb11 !important;
+  border-color: #76cb11;
+  color: #fff !important;
+}
+
+/* override bootstrap radio check mark */
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #76cb11;
+  background-color: #76cb11;
+  box-shadow: none !important;
+}
+
+/* ------------------------- */
+/* Reuseable Style */
+/* ------------------------- */
+
+/* custom design */
 /* custom background */
 .bg-light-success {
   background: #e2f0d9 !important;
 }
 
-/* override font color */
+/* custom container */
+.custom-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
 
 /* truncate after 3 line  */
 .truncate-overflow {
@@ -56,6 +75,15 @@ a {
   overflow: hidden;
 }
 
+.link {
+  text-decoration: underline !important;
+}
+
+.link:hover {
+  color: #40aaf9;
+}
+
+/* Components Custom Design */
 /* cover image */
 .cover-img {
   height: 29vw;
@@ -71,6 +99,9 @@ a {
   color: transparent;
 }
 
+/* ----------------------- */
+/* Icon Hover Effects */
+/* ----------------------- */
 .instagram-icon:hover,
 .youtube-icon:hover,
 .tiktok-icon:hover {
@@ -107,6 +138,7 @@ a {
   margin: 0 auto;
 }
 
+/* fixed card width */
 .support-option-card-list .card {
   width: 320px;
 }
@@ -119,14 +151,6 @@ a {
 .support-description,
 .benefit-list {
   font-size: 14px;
-}
-
-.link {
-  text-decoration: underline !important;
-}
-
-.link:hover {
-  color: #40aaf9;
 }
 
 /* message form */
@@ -142,9 +166,9 @@ textarea {
 }
 
 .paid-header,
-.article-video video,
-.article-image img {
-  border-radius: 20px 20px 0 0;
+.content-header video,
+.content-header img {
+  border-radius: 18px 18px 0 0;
   outline: 0;
 }
 
@@ -154,10 +178,13 @@ textarea {
 .supporter-img {
   width: 80px;
 }
+
+/* treat product image */
 .product-img {
   width: 50px;
 }
 
+/* counter design */
 .counter {
   width: 150px;
 }
@@ -166,7 +193,69 @@ textarea {
   width: 35px;
   font-size: 22px;
 }
-/* footer image */
+
+/* Quantity Input */
+input#quantity {
+  width: 10%;
+}
+
+/* Payment selection */
+.payment-card {
+  height: 55px;
+  width: 115px;
+}
+
+.payment-card img {
+  transform: scale(0.8);
+}
+
+.payment-card.active {
+  border: 5px solid #76cb11 !important;
+}
+
+/* -------------------------- */
+/* Post details Page */
+/* -------------------------- */
+.post-navigator a {
+  width: 48%;
+}
+
+/* footer section */
 footer {
   font-size: 14px;
+}
+
+/* ------------------------- */
+/* Media Queries */
+/* ------------------------- */
+@media (max-width: 360px) {
+  .social-icon img {
+    width: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    left: 0;
+    right: auto;
+  }
+}
+
+@media (max-width: 786px) {
+  .talent-description,
+  .button-list {
+    width: 100% !important;
+  }
+
+  .custom-container {
+    width: 90% !important;
+  }
 }
